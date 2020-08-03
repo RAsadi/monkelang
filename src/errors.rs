@@ -16,7 +16,7 @@ impl ParseTokenError {
 
 impl fmt::Display for ParseTokenError {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-        write!(f, "invalid token {}", self.token)
+        write!(f, "invalid token/token_pair: {}", self.token)
     }
 }
 

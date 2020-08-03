@@ -18,6 +18,6 @@ fn main() {
         buf_reader
             .read_to_string(&mut contents)
             .expect("Failed to read file");
-        let parser = parser::Parser::new(&contents.to_string()).expect("Failed to parse file");
+        parser::Parser::new(&contents.to_string()).expect("Failed to parse file");
     }
 }
